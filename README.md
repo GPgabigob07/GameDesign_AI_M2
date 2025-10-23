@@ -4,7 +4,7 @@ Village Management Game using Behaviour Tree AI pattern.
 
 ## 🎮 Overview
 A C# (Unity) project demonstrating a **Behaviour Tree**-driven AI system in a small **village management** game. Villagers perform actions like gathering, building, or idling based on BT logic.
-![Alt text]("monkey ai tree.png")
+![Alt text](monkey-ai-tree.png)
 
 ## 🧱 Features
 - Modular Behaviour Tree (Selector, Sequence, Action nodes)
