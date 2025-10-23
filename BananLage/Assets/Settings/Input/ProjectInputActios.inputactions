@@ -1,0 +1,34 @@
+{
+    "name": "ProjectInputActios",
+    "maps": [
+        {
+            "name": "UIMap",
+            "id": "559dbd55-c5f2-4675-995e-8d811412b075",
+            "actions": [
+                {
+                    "name": "New action",
+                    "type": "Button",
+                    "id": "3c6ad5dd-71b6-46c8-8f02-9bba8427c4f3",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "ad932c06-9f12-41d3-a833-cebf65211e67",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "New action",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}

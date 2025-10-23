@@ -1,0 +1,75 @@
+.collapsible {
+    max-height: 220px;
+    background-color: rgb(42, 42, 42);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    min-width: 360px;
+    height: 128px;
+    max-width: 80%;
+    transition-property: min-width, height;
+    transition-duration: 0.25s, 0.25s;
+}
+
+.spacer {
+    display: none;
+}
+
+.option {
+    flex-grow: 0;
+    transition-duration: 0.25s;
+    padding-top: 12px;
+    padding-right: 12px;
+    padding-bottom: 12px;
+    padding-left: 12px;
+    margin-top: 12px;
+    margin-right: 12px;
+    margin-bottom: 12px;
+    margin-left: 12px;
+    width: 104px;
+    height: 104px;
+}
+
+.icon {
+    flex-grow: 0;
+    transition-duration: 0.25s;
+    width: 80px;
+    height: 80px;
+}
+
+.label {
+    translate: 0 150px;
+}
+
+.expanded {
+}
+
+.collapsible.expanded {
+    height: 220px;
+    transition-duration: 0.25s;
+}
+
+.collapsible.expanded .label {
+    translate: 0 0;
+    transition-duration: 0.25s;
+}
+
+.collapsible.expanded .icon {
+    flex-grow: 2;
+    width: initial;
+}
+
+.collapsible.expanded .option {
+    height: 220px;
+    width: 180px;
+}
+
+.collapsible.expanded .spacer {
+    display: flex;
+}
+
+.option:hover {
+    scale: 1.25 1.25;
+    transform-origin: bottom;
+}

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d06544a8a54e19a074da7de16f3d8e, type: 3}
+  m_Name: Love House
+  m_EditorClassIdentifier: 
+  structureName: Love House
+  uiSprite: {fileID: 128309143, guid: 645cdbfc7d5aa3749ad77c85c4491739, type: 3}
+  gamePrefab: {fileID: 0}
+  buildCosts: []

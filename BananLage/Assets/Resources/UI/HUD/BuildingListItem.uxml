@@ -1,0 +1,18 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/HUD/HudStyles.uss?fileID=7433441132597879392&amp;guid=b5e2aa122c91e944cae1b2322218dbd2&amp;type=3#HudStyles" />
+    <ui:VisualElement name="itemRoot" data-source-type="Mechanics.StructureData, Assembly-CSharp" class="option" style="border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px; background-color: rgb(132, 123, 92); align-content: center; align-items: stretch; justify-content: center;">
+        <ui:VisualElement name="buildingIcon" class="icon" style="border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-right-radius: 12px; border-bottom-left-radius: 12px; overflow: hidden; background-color: rgba(0, 0, 0, 0.4);">
+            <Bindings>
+                <ui:DataBinding property="style.backgroundImage" binding-mode="ToTarget" data-source-path="uiSprite" />
+            </Bindings>
+        </ui:VisualElement>
+        <ui:VisualElement name="space" class="spacer" style="flex-grow: 0; height: 12px;" />
+        <ui:VisualElement name="buildingNameContainer" class="label" style="flex-grow: 1; background-color: rgb(190, 135, 135); border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-right-radius: 12px; border-bottom-left-radius: 12px; align-items: center; justify-content: center; height: initial; max-height: initial;">
+            <ui:Label text="Label" name="structureNameLabel" style="font-size: 20px; color: rgb(0, 0, 0); -unity-font-style: bold; height: 26px; -unity-text-align: middle-center;">
+                <Bindings>
+                    <ui:DataBinding property="text" data-source-path="structureName" binding-mode="ToTarget" />
+                </Bindings>
+            </ui:Label>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

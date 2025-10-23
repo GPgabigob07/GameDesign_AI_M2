@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eca28424c7240d9a3a7a9b4cbd62083, type: 3}
+  m_Name: MonkeyGlobalConfig
+  m_EditorClassIdentifier: 
+  debug: 0
+  ProwessBoostUnit: 0.5
+  AgeProwessBoostUnit: 0.75
+  MinimalCost: 0
+  NominalOutputBoost: 0.025
+  startProwessPoints: 10
+  GenderRatio: 0.6
+  MaleConfiguration:
+    minMatingCycles: 3
+    maxMatingCycles: 5
+    minStartHp: 5
+    maxStartHp: 10
+    likelyProwess:
+      taskEntries:
+      - task: 0
+        points: 3
+        enabled: 1
+      - task: 1
+        points: 3
+        enabled: 1
+      - task: 2
+        points: 2
+        enabled: 1
+      - task: 3
+        points: 1
+        enabled: 1
+      - task: 4
+        points: 1
+        enabled: 1
+    baseActionValue: 6
+  FemaleConfiguration:
+    minMatingCycles: 3
+    maxMatingCycles: 5
+    minStartHp: 5
+    maxStartHp: 10
+    likelyProwess:
+      taskEntries:
+      - task: 0
+        points: 1
+        enabled: 1
+      - task: 1
+        points: 1
+        enabled: 1
+      - task: 2
+        points: 2
+        enabled: 1
+      - task: 3
+        points: 4
+        enabled: 1
+      - task: 4
+        points: 3
+        enabled: 1
+    baseActionValue: 5
+  NoExecutionCostProwess:
+    taskEntries:
+    - task: 0
+      points: 100
+      enabled: 1
+    - task: 1
+      points: 90
+      enabled: 1
+    - task: 2
+      points: 90
+      enabled: 1
+    - task: 3
+      points: 80
+      enabled: 1
+    - task: 4
+      points: 100
+      enabled: 1
+  amplificationConfig: []

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d06544a8a54e19a074da7de16f3d8e, type: 3}
+  m_Name: PlantField
+  m_EditorClassIdentifier: 
+  structureName: Plant Field
+  uiSprite: {fileID: 21300000, guid: fe1609aa5aecbb044a4299cdd55da8f0, type: 3}
+  gamePrefab: {fileID: 0}
+  buildCosts:
+  - amount: 0
+    resource: {fileID: 0}
+  buildTimePerAv: 2
+  buildAV: 3
+  executionAV: 1
+  worldSize: {x: 2, y: 2}
+  workingArea: {x: 1, y: 1}
+  workingAreaOffset: {x: 0, y: -1}
+  taskType: 2
+  productionTimeAmp: 1
+  canProduceContinuously: 0
+  outputs:
+  - amount: 2
+    resource: {fileID: 11400000, guid: a0dbb019ba7655647975c614ac6e2352, type: 2}
+  - amount: 5
+    resource: {fileID: 11400000, guid: a0dbb019ba7655647975c614ac6e2352, type: 2}
+  - amount: 70
+    resource: {fileID: 11400000, guid: a0dbb019ba7655647975c614ac6e2352, type: 2}
