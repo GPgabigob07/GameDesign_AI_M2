@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using JetBrains.Annotations;
 using Mechanics;
 using Mechanics.Jobs;
@@ -31,21 +32,25 @@ namespace Structures
 
         public override TaskType JobType => StructureData.taskType;
 
-        protected virtual void Start()
+        protected override IEnumerator Start()
         {
             VillageManager.RegisterStructure(this);
+            yield return base.Start();
         }
 
+        protected virtual void Update()
+        {
+            if (CurrentJob is null) return;
+            if (!JobContext.MonkeyHandshake(this)) return;
+            
+            CurrentJob.Tick();
+        }
+        
         protected virtual void OnDestroy()
         {
             VillageManager.UnregisterStructure(this);
         }
-
-        public int EvaluateAVCost()
-        {
-            return 0;
-        }
-
+        
         protected abstract T CreateSpecializedJob(MonkeyData monkey);
         public override JobContext CreateJob(MonkeyData monkey) => CreateSpecializedJob(monkey);
 
@@ -59,9 +64,6 @@ namespace Structures
 
             var worldSize = StructureData.worldSize.To3D().ToFloat();
             
-            if (worldSize.x % 2 != 0) p.x += .5f;
-            if (worldSize.y % 2 != 0) p.y += .5f;
-            
             Gizmos.color = Color.blue;
             Gizmos.DrawWireCube(p, worldSize);
             
@@ -69,13 +71,7 @@ namespace Structures
             Gizmos.DrawCube(p, worldSize);
 
             Gizmos.color = Color.red;
-            Gizmos.DrawSphere(wc, 0.45f);
-
-            Gizmos.color = new Color(0.0f, 1f, 0.0f, 0.5f);
-            Gizmos.DrawCube(wc, StructureData.workingArea.ToFloat());
-
-            Gizmos.color = Color.green;
-            Gizmos.DrawWireCube(wc, StructureData.workingArea.ToFloat());
+            Gizmos.DrawSphere(wc, 0.1f);
         }
     }
 }

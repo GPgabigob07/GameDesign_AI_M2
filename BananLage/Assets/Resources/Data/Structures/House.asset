@@ -14,15 +14,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   structureName: House
   uiSprite: {fileID: 1478823333, guid: 645cdbfc7d5aa3749ad77c85c4491739, type: 3}
-  gamePrefab: {fileID: 0}
+  structureType: 1
+  structureStage: {fileID: 0}
   buildCosts: []
-  buildTimePerAv: 2
-  buildAV: 25
-  executionAV: 0
-  worldSize: {x: 2, y: 2}
+  buildConfiguration:
+    maxAvPerWorker: 0
+    maxWorkers: 0
+    maxConcurrentWorkers: 0
+    minCycles: 0
+    aVCost: 0
+    canExecuteContinuously: 0
+    timePerAv: 0
+  isBuildable: 0
+  worldSize: {x: 5, y: 3}
   workingArea: {x: 1, y: 1}
   workingAreaOffset: {x: 0, y: -1}
   taskType: 0
-  productionTimeAmp: 1
-  canProduceContinuously: 0
+  taskAnimation: 0
+  productionCycleConfiguration:
+    maxAvPerWorker: 0
+    maxWorkers: 0
+    maxConcurrentWorkers: 0
+    minCycles: 0
+    aVCost: 0
+    canExecuteContinuously: 0
+    timePerAv: 0
   outputs: []

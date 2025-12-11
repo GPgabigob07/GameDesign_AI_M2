@@ -1,0 +1,17 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="itemRoot" data-source-type="Mechanics.ItemManagement.UIInventoryItem, Assembly-CSharp" style="flex-direction: row; height: initial; width: initial;">
+        <ui:VisualElement name="itemImage" style="background-color: rgba(24, 24, 24, 0.83); width: 32px; height: 32px; border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px;">
+            <Bindings>
+                <ui:DataBinding property="style.backgroundImage" data-source-path="resource.uiSprite" data-source-type="Mechanics.Inventory.UIInventoryItem, Assembly-CSharp" binding-mode="ToTarget" />
+            </Bindings>
+        </ui:VisualElement>
+        <ui:Label text="0000 / 0000" name="itemQuantity">
+            <Bindings>
+                <ui:DataBinding property="text" data-source-path="QuantityDisplay" binding-mode="ToTarget" />
+            </Bindings>
+        </ui:Label>
+        <Bindings>
+            <ui:DataBinding property="tooltip" data-source-path="resource.displayName" binding-mode="ToTarget" />
+        </Bindings>
+    </ui:VisualElement>
+</ui:UXML>

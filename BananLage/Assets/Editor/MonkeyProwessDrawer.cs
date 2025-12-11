@@ -57,17 +57,20 @@ public class MonkeyProwessDrawer : PropertyDrawer
 
             TaskType task = (TaskType)taskProp.enumValueIndex;
             int points = pointsProp.intValue;
+            int executed = runtime?.Executed(task) ?? 0;
             bool enabled = enabledProp.boolValue;
 
             // Layout
             float toggleWidth = 18f;
             float inputWidth = 40f;
             float labelWidth = 80f;
+            float executedLabelWidth = 40f;
 
             var labelRect = new Rect(rect.x, rect.y, labelWidth, LineHeight);
             var toggleRect = new Rect(labelRect.xMax + 4, rect.y, toggleWidth, LineHeight);
             var inputRect = new Rect(toggleRect.xMax + 4, rect.y, inputWidth, LineHeight);
-            var barRect = new Rect(inputRect.xMax + 6, rect.y + 2, rect.width - inputRect.xMax - 10, BarHeight);
+            var barRect = new Rect(inputRect.xMax + 6, rect.y + 2, rect.width - 10 - executedLabelWidth - inputRect.xMax, BarHeight);
+            var executedRect = new Rect(barRect.xMax + 4, rect.y, executedLabelWidth, LineHeight);
 
             // Highlight Most/Least
             Color barColor = enabled ? Color.green : Color.red;
@@ -87,6 +90,7 @@ public class MonkeyProwessDrawer : PropertyDrawer
             float fill = Mathf.Clamp01(pointsProp.intValue / 100f);
             EditorGUI.DrawRect(barRect, new Color(0.15f, 0.15f, 0.15f));
             EditorGUI.DrawRect(new Rect(barRect.x, barRect.y, barRect.width * fill, barRect.height), barColor);
+            EditorGUI.LabelField(executedRect, executed.ToString(), EditorStyles.boldLabel);
 
             rect.y += LineHeight + BarHeight + Padding;
         }

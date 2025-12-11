@@ -1,0 +1,59 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="StructureItemTempalte" src="project://database/Assets/Resources/UI/Building/StructureItemTempalte.uxml?fileID=9197481963319205126&amp;guid=8ccc7b6704462594fb7036395de7b924&amp;type=3#StructureItemTempalte" />
+    <Style src="project://database/Assets/Resources/UI/Building/StructureTabbedPanel.uss?fileID=7433441132597879392&amp;guid=3cdda7a3ea767944a9ca2a5a07e495c7&amp;type=3#StructureTabbedPanel" />
+    <Style src="project://database/Assets/GlobalStyles.uss?fileID=7433441132597879392&amp;guid=0e0955816600cc04eb29f8fa57981950&amp;type=3#GlobalStyles" />
+    <ui:VisualElement name="structureListFragment" style="background-image: resource(&apos;UI/Sprites/HUD/estruturas/painel estruturas&apos;); height: 240px;">
+        <ui:VisualElement name="panelTitle" style="width: 23%; flex-direction: row; align-items: center; justify-content: space-around; padding-top: 8px; padding-right: 8px; padding-bottom: 0; padding-left: 8px;">
+            <ui:Label text="ESTRUTURAS" class="title" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; font-size: 21px;" />
+            <ui:VisualElement class="icon" style="background-image: resource(&apos;UI/Sprites/HUD/icones/marreta&apos;); flex-shrink: 0;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="flex-grow: 1; flex-direction: row; padding-top: 8px; align-items: stretch; justify-content: space-evenly; align-content: stretch;">
+            <ui:VisualElement name="buttonsContainer" style="width: 23%; flex-wrap: wrap; justify-content: space-between; align-items: stretch; align-self: stretch; align-content: stretch; padding-right: 16px; padding-left: 16px; flex-direction: column; height: 96px; overflow: visible; visibility: visible;">
+                <ui:VisualElement name="buttonRoot" data-source-type="UI.Controllers.Structure_List.StructureTabViewObject, Assembly-CSharp" class="tabButton">
+                    <ui:VisualElement name="buttonIcon">
+                        <Bindings>
+                            <ui:DataBinding property="style.unityBackgroundImageTintColor" data-source-path="TintColor" binding-mode="ToTarget" />
+                            <ui:DataBinding property="style.backgroundImage" data-source-path="Icon" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:VisualElement>
+                    <Bindings>
+                        <ui:DataBinding property="style.unityBackgroundImageTintColor" data-source-path="TintColor" binding-mode="ToTarget" />
+                    </Bindings>
+                </ui:VisualElement>
+                <ui:VisualElement name="buttonRoot" data-source-type="UI.Controllers.Structure_List.StructureTabViewObject, Assembly-CSharp" class="tabButton">
+                    <ui:VisualElement name="buttonIcon">
+                        <Bindings>
+                            <ui:DataBinding property="style.unityBackgroundImageTintColor" data-source-path="TintColor" binding-mode="ToTarget" />
+                            <ui:DataBinding property="style.backgroundImage" data-source-path="Icon" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:VisualElement>
+                    <Bindings>
+                        <ui:DataBinding property="style.unityBackgroundImageTintColor" data-source-path="TintColor" binding-mode="ToTarget" />
+                    </Bindings>
+                </ui:VisualElement>
+                <ui:VisualElement name="buttonRoot" data-source-type="UI.Controllers.Structure_List.StructureTabViewObject, Assembly-CSharp" class="tabButton">
+                    <ui:VisualElement name="buttonIcon">
+                        <Bindings>
+                            <ui:DataBinding property="style.unityBackgroundImageTintColor" data-source-path="TintColor" binding-mode="ToTarget" />
+                            <ui:DataBinding property="style.backgroundImage" data-source-path="Icon" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:VisualElement>
+                    <Bindings>
+                        <ui:DataBinding property="style.unityBackgroundImageTintColor" data-source-path="TintColor" binding-mode="ToTarget" />
+                    </Bindings>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="buttonsContentContainer" style="flex-grow: 1; padding-bottom: 12px; padding-right: 20px; padding-top: 0;">
+                <ui:ScrollView mode="Horizontal" horizontal-scroller-visibility="AlwaysVisible" vertical-scroller-visibility="Hidden" elasticity="0.5" name="structureList" style="flex-grow: 1;">
+                    <ui:Instance template="StructureItemTempalte" style="height: 128px;" />
+                    <ui:Instance template="StructureItemTempalte" style="height: 128px;" />
+                    <ui:Instance template="StructureItemTempalte" style="height: 128px;" />
+                    <ui:Instance template="StructureItemTempalte" style="height: 128px;" />
+                    <ui:Instance template="StructureItemTempalte" style="height: 128px;" />
+                    <ui:Instance template="StructureItemTempalte" style="height: 128px;" />
+                    <ui:Instance template="StructureItemTempalte" style="height: 128px;" />
+                </ui:ScrollView>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

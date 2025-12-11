@@ -1,0 +1,6 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/Building/TabStyle.uss?fileID=7433441132597879392&amp;guid=507314ec0c4203e44887a58d41ee2113&amp;type=3#TabStyle" />
+    <ui:Tab label="Tab" name="tabMenu" style="flex-grow: 1; min-width: 307px;">
+        <ui:VisualElement name="structureList" style="flex-direction: row; flex-wrap: wrap;" />
+    </ui:Tab>
+</ui:UXML>

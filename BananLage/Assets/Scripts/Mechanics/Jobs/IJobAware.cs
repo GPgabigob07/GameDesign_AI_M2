@@ -1,8 +1,12 @@
 namespace Mechanics.Jobs
 {
-    public interface IJobAware
+    public interface IJobAware: IJobContainer
+    {
+        public TaskType JobType { get; }
+    }
+
+    public interface IJobContainer
     {
         public JobContext JobContext { get; }
-        public TaskType JobType { get; }
     }
 }

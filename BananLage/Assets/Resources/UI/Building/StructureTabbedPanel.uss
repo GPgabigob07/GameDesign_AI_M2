@@ -1,0 +1,65 @@
+#unity-content-container {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.tabButton {
+    background-image: resource('UI/Sprites/HUD/estruturas/botao estruturas');
+    margin-top: 2px;
+    margin-bottom: 2px;
+    margin-right: 8px;
+    margin-left: 8px;
+    flex-grow: 1;
+    max-height: 40px;
+    max-width: 50%;
+    flex-basis: 40%;
+    align-self: stretch;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.tabButton > * {
+    width: 32px;
+    height: 32px;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+#unity-low-button {
+    display: none;
+}
+
+#unity-high-button {
+    display: none;
+}
+
+.unity-scroller {
+    background-image: resource('UI/Sprites/HUD/estruturas/linha scroll');
+    height: 12px;
+}
+
+#unity-tracker {
+    visibility: hidden;
+}
+
+#unity-dragger {
+    visibility: visible;
+    background-image: resource('UI/Sprites/HUD/estruturas/botao scroll');
+    width: 72px;
+    height: 18px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin-bottom: 0;
+    margin-top: -3px;
+    max-width: 128px;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+#unity-slider {
+    height: 12px;
+    min-height: 12px;
+    overflow: visible;
+}

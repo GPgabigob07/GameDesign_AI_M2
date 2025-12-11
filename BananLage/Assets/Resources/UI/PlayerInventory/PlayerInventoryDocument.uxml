@@ -1,0 +1,20 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="ItemResourceDocument" src="project://database/Assets/Resources/UI/PlayerInventory/ItemResourceDocument.uxml?fileID=9197481963319205126&amp;guid=d3f4542c4789da2498251c06013165d1&amp;type=3#ItemResourceDocument" />
+    <Style src="project://database/Assets/Resources/UI/PlayerInventory/PlayerInventoryStyle.uss?fileID=7433441132597879392&amp;guid=44ba7da081b09184eb7c4ca4de0d9c31&amp;type=3#PlayerInventoryStyle" />
+    <Style src="project://database/Assets/GlobalStyles.uss?fileID=7433441132597879392&amp;guid=0e0955816600cc04eb29f8fa57981950&amp;type=3#GlobalStyles" />
+    <ui:VisualElement name="playerInventoryRoot" class="inventory expanded" style="transition-duration: 0.5s, 0.5s; transition-property: translate, height; overflow: hidden; height: 350px; transition-timing-function: ease-out-sine, ease; position: relative; background-image: resource(&apos;UI/Sprites/HUD/inventario/inventario&apos;); background-color: rgba(255, 255, 255, 0); width: 468px;">
+        <ui:VisualElement name="inventoryTab" style="flex-direction: row; width: 50%; align-items: center; justify-content: center; align-content: center;">
+            <ui:Label text="INVENTÁRIO" emoji-fallback-support="true" double-click-selects-word="false" triple-click-selects-line="false" display-tooltip-when-elided="false" class="title" style="flex-grow: 1;" />
+            <ui:VisualElement class="icon" style="flex-grow: 0; background-image: resource(&apos;UI/Sprites/HUD/icones/mochila&apos;);" />
+        </ui:VisualElement>
+        <ui:ScrollView name="fullInventory" horizontal-scroller-visibility="Hidden" class="full-inventory expanded" style="height: auto; position: relative; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px;">
+            <ui:Instance template="ItemResourceDocument" />
+            <ui:Instance template="ItemResourceDocument" />
+            <ui:Instance template="ItemResourceDocument" />
+            <ui:Instance template="ItemResourceDocument" />
+            <ui:Instance template="ItemResourceDocument" />
+            <ui:Instance template="ItemResourceDocument" />
+            <ui:Instance template="ItemResourceDocument" />
+        </ui:ScrollView>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d06544a8a54e19a074da7de16f3d8e, type: 3}
+  m_Name: RockPile
+  m_EditorClassIdentifier: 
+  structureName: Rock Pile (Basic)
+  uiSprite: {fileID: 21300000, guid: 28cdd85a625c6bf4eb7265083755024a, type: 3}
+  structureType: 0
+  structureStage: {fileID: 0}
+  buildCosts:
+  - amount: 20
+    resource: {fileID: 11400000, guid: 4777d54857f86524e82602932b057a1d, type: 2}
+    chance: 1
+  - amount: 15
+    resource: {fileID: 11400000, guid: a0dbb019ba7655647975c614ac6e2352, type: 2}
+    chance: 1
+  buildConfiguration:
+    maxAvPerWorker: 4
+    maxWorkers: 2
+    maxConcurrentWorkers: 2
+    minCycles: 0
+    aVCost: 10
+    canExecuteContinuously: 0
+    timePerAv: 1
+  isBuildable: 1
+  worldSize: {x: 2, y: 2}
+  workingArea: {x: 2, y: 2}
+  workingAreaOffset: {x: 0, y: -1}
+  taskType: 2
+  taskAnimation: 1
+  productionCycleConfiguration:
+    maxAvPerWorker: 5
+    maxWorkers: 1
+    maxConcurrentWorkers: 1
+    minCycles: 0
+    aVCost: 5
+    canExecuteContinuously: 1
+    timePerAv: 10
+  outputs:
+  - amount: 5
+    resource: {fileID: 11400000, guid: 4777d54857f86524e82602932b057a1d, type: 2}
+    chance: 1

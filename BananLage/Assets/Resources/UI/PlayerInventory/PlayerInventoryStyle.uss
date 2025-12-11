@@ -1,0 +1,66 @@
+.inventory {
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    border-top-left-radius: 16px;
+    background-color: rgb(91, 91, 91);
+    padding-top: 2px;
+    padding-right: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    overflow: hidden;
+}
+
+.inventory .resumed {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: auto;
+    left: 0;
+    bottom: auto;
+    transition-duration: 0.25s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+    opacity: 1;
+    visibility: visible;
+    margin-top: 16px;
+    margin-right: 16px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+}
+
+.inventory.expanded .resumed {
+    transition-property: visibility;
+    transition-delay: 0.25s;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.inventory .full-inventory {
+    transition-property: visibility, opacity;
+    transition-delay: 0.501s, 0s;
+    transition-duration: 0s, 0.5s;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+}
+
+.inventory.expanded .full-inventory {
+    transition-property: opacity, visibility, height;
+    transition-duration: 0.5s, 0s, 0.5s;
+    opacity: 1;
+    visibility: visible;
+    display: flex;
+}
+
+.inventory.expanded {
+}
+
+.inventory #unity-content-container {
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}

@@ -1,0 +1,18 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/GlobalStyles.uss?fileID=7433441132597879392&amp;guid=0e0955816600cc04eb29f8fa57981950&amp;type=3#GlobalStyles" />
+    <ui:VisualElement name="prowessItemRoot" data-source-type="UI.Controllers.Object_Details.Types.ProwessUIViewObject, Assembly-CSharp" style="border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; padding-top: 4px; padding-right: 4px; padding-bottom: 4px; padding-left: 4px; flex-direction: column; background-image: resource(&apos;UI/Sprites/HUD/status/gerenciamento/ger estruturas/botao&apos;); width: 40px; margin-top: 2px; margin-right: 2px; margin-bottom: 2px; margin-left: 2px;">
+        <ui:VisualElement name="icon" style="width: 32px; height: 32px; border-top-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; border-bottom-left-radius: 4px; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0);">
+            <Bindings>
+                <ui:DataBinding property="style.backgroundImage" data-source-path="Icon" binding-mode="ToTarget" />
+            </Bindings>
+        </ui:VisualElement>
+        <ui:Label text="55" triple-click-selects-line="false" double-click-selects-word="false" display-tooltip-when-elided="false" class="label" style="-unity-font-style: bold; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+            <Bindings>
+                <ui:DataBinding property="text" data-source-path="Points" binding-mode="ToTarget" />
+            </Bindings>
+        </ui:Label>
+        <Bindings>
+            <ui:DataBinding property="style.unityBackgroundImageTintColor" data-source-path="BackgroundColor" binding-mode="ToTarget" />
+        </Bindings>
+    </ui:VisualElement>
+</ui:UXML>

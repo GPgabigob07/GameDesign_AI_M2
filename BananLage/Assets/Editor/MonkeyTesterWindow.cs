@@ -44,9 +44,17 @@ namespace Mechanics.Editor
             {
                 testMonkey = config.CreateMonkey(points);
             }
+            
+            if (GUILayout.Button("Instantiate Monkey"))
+            {
+                monkeyBt = Instantiate(Resources.Load<MonkeyCharacterBT>("Prefabs/MonkeyUnit"));
+                testMonkey = config.CreateMonkey(points);
+            }
 
             if (testMonkey != null)
             {
+                monkeyBt ??= Instantiate(Resources.Load<MonkeyCharacterBT>("Prefabs/MonkeyUnit"));
+                
                 if (monkeyBt)
                 {
                     monkeyBt.OriginalData = testMonkey;
@@ -57,7 +65,7 @@ namespace Mechanics.Editor
                 GUILayout.Label("Monkey Stats", EditorStyles.boldLabel);
                 EditorGUILayout.LabelField("Name", testMonkey.Name);
                 EditorGUILayout.LabelField("Gender", testMonkey.Gender.ToString());
-                EditorGUILayout.LabelField("UUID", testMonkey.UUID.ToString());
+                EditorGUILayout.LabelField("UUID", testMonkey.Id.ToString());
                 EditorGUILayout.LabelField("HP", testMonkey.Hp.ToString());
                 EditorGUILayout.LabelField("Action Value", testMonkey.ActionValue.ToString());
                 EditorGUILayout.LabelField("Age", testMonkey.Age.ToString());

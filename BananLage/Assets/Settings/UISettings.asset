@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db5c3a0064394b1983ed76e3000fe429, type: 3}
+  m_Name: UISettings
+  m_EditorClassIdentifier: 
+  lensSizePerUnit: 0.65
+  prowessSetting:
+  - type: 0
+    icon: {fileID: 21300000, guid: 6a374bac9df35d94ebd6f0e400b3a7d6, type: 3}
+  - type: 1
+    icon: {fileID: 21300000, guid: e89d1d0cc5fa99045a474252e87dc222, type: 3}
+  - type: 2
+    icon: {fileID: 21300000, guid: f54eca40e44864d429deb41fceed06d1, type: 3}
+  - type: 3
+    icon: {fileID: 21300000, guid: ada08da4f364dad49b5a87ee4554b1e5, type: 3}
+  - type: 4
+    icon: {fileID: 21300000, guid: beefa1909197d934cbb4c9c9a4691f90, type: 3}
+  - type: 5
+    icon: {fileID: 21300000, guid: 483dd7d9dcaade543b5d3df9541a9b41, type: 3}
+  - type: 6
+    icon: {fileID: 21300000, guid: 483dd7d9dcaade543b5d3df9541a9b41, type: 3}
+  prowessTemplate: {fileID: 9197481963319205126, guid: 66f27a8efb13e15459e4e5587eff29f3, type: 3}
+  monkeyTemplate: {fileID: 9197481963319205126, guid: 1497cffcb1d84f646a60f36153110cb3, type: 3}
+  productionStructureTemplate: {fileID: 9197481963319205126, guid: 538a7a14e9f1baf479f77dd9d64f9eeb, type: 3}
+  structureBasicsTemplate: {fileID: 9197481963319205126, guid: 5bd2b20d4b24bf345ab9bcd73f57bd2f, type: 3}
+  productionOutputItemTemplate: {fileID: 9197481963319205126, guid: ffe8040d94b100c4c87a4f0eaecbcdb8, type: 3}
+  buildingResourcesTemplate: {fileID: 9197481963319205126, guid: 7396e8b4f389d074ca7adb21537de853, type: 3}

@@ -1,0 +1,12 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="BuildingListItem" src="project://database/Assets/Resources/UI/Building/Hotbar/BuildingListItem.uxml?fileID=9197481963319205126&amp;guid=3b005a399fce5cb4292886723b73ed03&amp;type=3#BuildingListItem" />
+    <Style src="project://database/Assets/Resources/UI/Building/Hotbar/BuildingHotbarStyles.uss?fileID=7433441132597879392&amp;guid=b5e2aa122c91e944cae1b2322218dbd2&amp;type=3#BuildingHotbarStyles" />
+    <ui:ScrollView mode="Horizontal" vertical-scroller-visibility="Hidden" name="structureScrollView" horizontal-scroller-visibility="Hidden" class="collapsible" style="bottom: 0; position: absolute; align-self: center;">
+        <ui:Instance template="BuildingListItem" />
+        <ui:Instance template="BuildingListItem" />
+        <ui:Instance template="BuildingListItem" />
+        <ui:Instance template="BuildingListItem" />
+        <ui:Instance template="BuildingListItem" />
+        <ui:Instance template="BuildingListItem" />
+    </ui:ScrollView>
+</ui:UXML>

@@ -1,0 +1,8 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/GlobalStyles.uss?fileID=7433441132597879392&amp;guid=0e0955816600cc04eb29f8fa57981950&amp;type=3#GlobalStyles" />
+    <ui:VisualElement name="skippinCycleModalRoot" style="flex-grow: 1; width: 100%; position: absolute; height: 100%; background-color: rgba(0, 0, 0, 0.6); align-content: center; align-self: center; justify-content: center; align-items: center;">
+        <ui:VisualElement name="skippingCycleModal" style="align-self: center; bottom: auto; top: auto; position: absolute; align-content: center; justify-content: center; align-items: center; padding-top: 24px; padding-right: 24px; padding-bottom: 24px; padding-left: 24px; border-bottom-left-radius: 0; border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; background-image: resource(&apos;UI/Sprites/HUD/status/gerenciamento/ger estruturas/painel ger estruturas&apos;); -unity-background-scale-mode: stretch-to-fill; background-position-x: left 0;">
+            <ui:Label text="Passando o Ciclo..." class="title" style="font-size: 90px; -unity-font-style: bold;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

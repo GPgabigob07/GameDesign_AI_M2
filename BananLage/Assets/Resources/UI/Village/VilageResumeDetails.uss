@@ -1,0 +1,9 @@
+#cycleBarCycles > * {
+    height: 24px;
+    width: 64px;
+    align-self: center;
+    background-image: resource('UI/Sprites/HUD/ciclo/barra ciclo ataque');
+    transition-duration: 0.5s;
+    flex-grow: 0;
+    flex-shrink: 0;
+}

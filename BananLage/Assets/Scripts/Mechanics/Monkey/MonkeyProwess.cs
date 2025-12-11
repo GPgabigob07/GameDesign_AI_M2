@@ -1,14 +1,18 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.Serialization;
+using Mechanics.Village;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
 namespace Mechanics
 {
     [Serializable]
-    public class MonkeyProwess : IEquatable<MonkeyProwess>, ISerializationCallbackReceiver
+    public class MonkeyProwess : 
+        IEquatable<MonkeyProwess>,
+        ISerializationCallbackReceiver, 
+        IEnumerable<ProwessTaskEntry>
     {
 
         #region Direct Access Stats
@@ -42,6 +46,14 @@ namespace Mechanics
             get => this[TaskType.Gather];
             set => this[TaskType.Gather] = value;
         }
+        
+        public int Idle
+        {
+            get => this[TaskType.Idle];
+            set => this[TaskType.Idle] = value;
+        }
+
+        public int Total => indexer.Values.Aggregate(0, (i, entry) => i + entry.points);
 
         #endregion
 
@@ -49,9 +61,12 @@ namespace Mechanics
 
         [SerializeField] private List<ProwessTaskEntry> taskEntries;
 
+        private Dictionary<TaskType, int> executedTasksThisCycle;
+
         public MonkeyProwess()
         {
             indexer ??= new Dictionary<TaskType, ProwessTaskEntry>();
+            executedTasksThisCycle ??= new Dictionary<TaskType, int>();
             taskEntries ??= new List<ProwessTaskEntry>();
             foreach (TaskType task in typeof(TaskType).GetEnumValues())
             {
@@ -77,30 +92,53 @@ namespace Mechanics
             return lowest.task;
         }
 
-        public TaskType? ResolveNew()
+        public TaskType ResolveNew(bool debug = false)
         {
+            var qtdWeight = VillageManager.GetComputedDecisionWeightsByQuantity();
+            var necessityWeight = VillageManager.GetComputedDecisionWeightsByNecessity();
+            
             var totalWeights = taskEntries
-                .Select(e => e.points)
+                .Where(e => e.enabled)
+                .Select(e => (e.points * qtdWeight[e.task] * necessityWeight[e.task]).Floor())
                 .Aggregate(0f, (total, stat) => total + stat);
+            
+            Allow(TaskType.Idle, true);
             
             var dice = Random.value;
             var sum = 0f;
             var attempts = taskEntries.Count(e => e.enabled);
-            for (var i = 0; i < indexer.Count || attempts > 0; i++)
+            var next = TaskType.Idle;
+            var iterator = taskEntries.GetEnumerator();
+            var time = 0f;
+            while (iterator.MoveNext())
             {
-                var item = indexer.ElementAt(i).Value;
-                sum += item.points / totalWeights;
+                if ((time += Time.deltaTime) > 3f) break;//failsafe
+                
+                var  item = iterator.Current;
+                if (item == null) continue;
+                
+                sum += (item.points * qtdWeight[item.task]).Floor() / totalWeights;
+                if (debug)
+                    Debug.Log($"[Prowess] Resolving... {item.task}[{item.points / totalWeights}][enabled:{item.enabled}]: {sum}, dice={dice}");
+                
                 if (sum < dice) continue;
+                
                 if (indexer.TryGetValue(item.task, out var e) && e.enabled)
-                    return item.task;
-
+                {
+                    if (debug)
+                        Debug.Log($"[Prowess] Resolved! {item.task}[{item.points / totalWeights}][enabled:{item.enabled}]: {sum}, dice={dice}");
+                    next = item.task;
+                    break;
+                }
+                
                 attempts--;
                 dice = Random.value;
                 sum = 0f;
-                i = 0;
+                iterator.Dispose();
+                iterator = taskEntries.GetEnumerator();
             }
-
-            return null;
+            
+            return next;
         }
 
         public int this[TaskType task]
@@ -118,6 +156,18 @@ namespace Mechanics
             indexer.Add(task, entry);
             taskEntries.Add(entry);
             return entry;
+        }
+
+        public void AddTaskPerformed(TaskType task)
+        {
+            Debug.Log($"[Prowess] Added task {task} +1, current = {executedTasksThisCycle.GetValueOrDefault(task)}");
+            if (executedTasksThisCycle.TryGetValue(task, out var count))
+            {
+                executedTasksThisCycle[task] = count + 1;
+                return;
+            }
+            
+            executedTasksThisCycle.Add(task, 1);
         }
 
         public bool Can(TaskType task) => indexer.TryGetValue(task, out var entry) && entry.enabled;
@@ -139,11 +189,18 @@ namespace Mechanics
             }
         }
 
+        public int Executed(TaskType task) => executedTasksThisCycle.GetValueOrDefault(task);
+
         public bool Equals(MonkeyProwess other)
         {
             if (other is null) return false;
             if (ReferenceEquals(this, other)) return true;
             return Equals(indexer, other.indexer) && Equals(taskEntries, other.taskEntries);
+        }
+
+        public IEnumerator<ProwessTaskEntry> GetEnumerator()
+        {
+            return taskEntries.GetEnumerator();
         }
 
         public override bool Equals(object obj)
@@ -157,6 +214,48 @@ namespace Mechanics
         public override int GetHashCode()
         {
             return HashCode.Combine(indexer, taskEntries);
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return GetEnumerator();
+        }
+
+        public MonkeyProwess Refresh()
+        {
+            var clone = Clone();
+            
+            var config = VillageManager.GetMinimumExecutionForIncrease().Clone();
+            foreach (var p in config.taskEntries)
+            {
+                var increase = clone.executedTasksThisCycle.GetValueOrDefault(p.task) / config[p.task];
+                clone[p.task] += increase;
+            }
+
+            clone.executedTasksThisCycle.Clear();
+            
+            return clone;
+        }
+
+        public MonkeyProwess Clone()
+        {
+            return new MonkeyProwess
+            {
+                executedTasksThisCycle = executedTasksThisCycle,
+                indexer = indexer,
+                taskEntries = taskEntries,
+            };
+        }
+        
+        public static MonkeyProwess operator +(MonkeyProwess one, MonkeyProwess other)
+        {
+            var p = new MonkeyProwess();
+            foreach (TaskType task in typeof(TaskType).GetEnumValues())
+            {
+                p[task] =  one[task] + other[task];
+            }
+
+            return p;
         }
     }
     

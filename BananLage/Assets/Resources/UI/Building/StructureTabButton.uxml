@@ -1,0 +1,13 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="buttonRoot" data-source-type="UI.Controllers.Structure_List.StructureTabViewObject, Assembly-CSharp" class="tabButton">
+        <ui:VisualElement name="buttonIcon">
+            <Bindings>
+                <ui:DataBinding property="style.unityBackgroundImageTintColor" data-source-path="TintColor" binding-mode="ToTarget" />
+                <ui:DataBinding property="style.backgroundImage" data-source-path="Icon" binding-mode="ToTarget" />
+            </Bindings>
+        </ui:VisualElement>
+        <Bindings>
+            <ui:DataBinding property="style.unityBackgroundImageTintColor" data-source-path="TintColor" binding-mode="ToTarget" />
+        </Bindings>
+    </ui:VisualElement>
+</ui:UXML>

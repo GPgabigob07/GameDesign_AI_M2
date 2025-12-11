@@ -1,8 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using AI.Monkey;
 using Mechanics.Village;
+using UnityEditor;
 using UnityEngine;
+using Object = UnityEngine.Object;
 using Random = UnityEngine.Random;
 
 namespace Mechanics
@@ -34,7 +37,8 @@ namespace Mechanics
             maxMatingCycles = 5,
             minStartHp = 5,
             maxStartHp = 10,
-            baseActionValue = 6
+            baseActionValue = 6,
+            bedEfficiency = 0.05f
         };
 
         [Header("Female Config")] public MonkeyGenderConfiguration FemaleConfiguration = new() {
@@ -50,7 +54,8 @@ namespace Mechanics
             maxMatingCycles = 5,
             minStartHp = 5,
             maxStartHp = 10,
-            baseActionValue = 5
+            baseActionValue = 5,
+            bedEfficiency = 0.07f
         };
 
         [Header("Prowess Configuration")] public MonkeyProwess NoExecutionCostProwess = new()
@@ -62,9 +67,20 @@ namespace Mechanics
             Appeal = 100,
         };
 
+        public MonkeyProwess decisionWeightPercentPerUnit;
+
         [SerializeField] private List<ProwessProductionAmplification> amplificationConfig = new();
 
         public Dictionary<TaskType, List<PPA_Ranges>> taskAmpRange = new();
+        
+        [Tooltip("For every n points increase monkeys prowess by 1")]
+        public MonkeyProwess ProwessExecutionIncrease;
+
+        [Header("Mating ")]
+        public float FatherMatingMultiplier => MaleConfiguration.bedEfficiency;
+        public float MotherMatingMultiplier => FemaleConfiguration.bedEfficiency;
+        
+        [field:SerializeField] public MonkeyCharacterBT MonkeyPrefab { get; private set; }
 
         private void OnValidate()
         {
@@ -77,9 +93,9 @@ namespace Mechanics
                 .ToDictionary(e => e.Item1, e => e.Item2);
         }
 
-        public MonkeyData CreateMonkey(int points)
+        public MonkeyData CreateMonkey(int points, MonkeyGender? g = null)
         {
-            var gender = Random.value <= GenderRatio ? MonkeyGender.M : MonkeyGender.F;
+            var gender = g ?? (Random.value <= GenderRatio ? MonkeyGender.M : MonkeyGender.F);
             var config = gender == MonkeyGender.M ? MaleConfiguration : FemaleConfiguration;
 
             return new MonkeyData
@@ -91,7 +107,7 @@ namespace Mechanics
                 Hp = config.NewHp(),
                 Name = gender.NewName(),
                 Age = 1,
-                UUID = Guid.NewGuid(),
+                Id = Guid.NewGuid().ToString(),
             };
         }
     }

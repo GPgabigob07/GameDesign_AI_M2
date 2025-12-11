@@ -1,0 +1,45 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/GlobalStyles.uss?fileID=7433441132597879392&amp;guid=0e0955816600cc04eb29f8fa57981950&amp;type=3#GlobalStyles" />
+    <Style src="project://database/Assets/Resources/UI/HUD/Object%20Details/ObjectDetailsStyles.uss?fileID=7433441132597879392&amp;guid=feebeed4faae31948ad9a97ab454cfcf&amp;type=3#ObjectDetailsStyles" />
+    <ui:VisualElement name="detailsRoot" data-source-type="UI.Controllers.Object_Details.ObjectDetailsViewObjectDelegate, Assembly-CSharp" style="align-self: flex-start; max-width: 400px; flex-direction: column;">
+        <ui:VisualElement name="panel" style="flex-grow: 1; background-image: resource(&apos;UI/Sprites/HUD/status/perfil status/painel status&apos;); padding-top: 16px; padding-right: 16px; padding-bottom: 16px; padding-left: 16px; min-height: initial;">
+            <ui:Label text="INFORMAÇÕES" class="title" style="font-size: 44px;" />
+            <ui:VisualElement style="flex-direction: row; max-height: 200px;">
+                <ui:VisualElement name="previewImage" style="-unity-background-scale-mode: scale-to-fit; background-color: rgb(57, 28, 5); border-top-left-radius: 16px; border-top-right-radius: 16px; border-bottom-right-radius: 16px; border-bottom-left-radius: 16px; min-width: 150px; min-height: 150px; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-left-color: rgba(0, 0, 0, 0.59); border-right-color: rgba(0, 0, 0, 0.59); border-top-color: rgba(0, 0, 0, 0.59); border-bottom-color: rgba(0, 0, 0, 0.59);">
+                    <Bindings>
+                        <ui:DataBinding property="style.backgroundImage" data-source-path="CameraBackground" binding-mode="ToTarget" />
+                    </Bindings>
+                </ui:VisualElement>
+                <ui:VisualElement name="labelContainer" style="padding-left: 16px; justify-content: space-between; align-content: stretch; align-self: stretch; flex-grow: 1;">
+                    <ui:Label text="Lorem Impsu" name="description1" class="label" style="-unity-font-style: bold; white-space: normal; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; min-height: 22px;">
+                        <Bindings>
+                            <ui:DataBinding property="text" data-source-path="Name" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Label>
+                    <ui:VisualElement name="spacer" class="spacer" />
+                    <ui:Label name="description2" class="label" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; min-height: 22px;">
+                        <Bindings>
+                            <ui:DataBinding property="text" data-source-path="Description1" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Label>
+                    <ui:VisualElement name="spacer" class="spacer" />
+                    <ui:Label name="description3" class="label" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; min-height: 22px;">
+                        <Bindings>
+                            <ui:DataBinding property="text" data-source-path="Description2" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Label>
+                    <ui:VisualElement name="spacer" class="spacer" />
+                    <ui:Label text="&#10;" name="description4" class="label" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; min-height: 22px;">
+                        <Bindings>
+                            <ui:DataBinding property="text" data-source-path="Description3" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Label>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="detailsContent" style="width: 70%; align-self: center;">
+            <ui:VisualElement name="vines" style="background-image: resource(&apos;UI/Sprites/HUD/status/perfil status/cipo&apos;); height: 50px; -unity-background-scale-mode: scale-and-crop; width: 91%; align-self: center; overflow: visible; visibility: visible; display: flex;" />
+            <ui:VisualElement name="detailsContentContainer" style="align-content: center; align-self: center; width: 100%;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

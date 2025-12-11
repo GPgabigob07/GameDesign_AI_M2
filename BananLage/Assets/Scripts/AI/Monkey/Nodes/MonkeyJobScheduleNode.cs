@@ -4,7 +4,7 @@ using Mechanics;
 
 namespace AI.Monkey.Nodes
 {
-    public sealed class MonkeyJobScheduleNode: SelectorNode<MonkeyCharacterBT>
+    public sealed class MonkeyJobScheduleNode: SequenceNode<MonkeyCharacterBT>
     {
         private readonly TaskType _taskType;
 
@@ -16,10 +16,10 @@ namespace AI.Monkey.Nodes
 
         protected override void CreateChildren()
         {
+            AddChild(new ReserveStructureForMonkeyNode(_taskType));
+            AddChild(MonkeyBooleans.MonkeyHasJob());
             AddChild(new MonkeyMoveTo());
             AddChild(new MonkeyJobEvaluatorNode(_taskType));
-            AddChild(MonkeyBooleans.IsMonkeyWorking());
-            AddChild(new ReserveStructureForMonkeyNode(_taskType));
         }
     }
 }

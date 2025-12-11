@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 130f5bb605984ab9933b89f3e93b449f, type: 3}
+  m_Name: SoundStorage
+  m_EditorClassIdentifier: 
+  uiClick: {fileID: 8300000, guid: 08205e51f3e8ae8438fbf75055128ce3, type: 3}
+  singleMonkeyBuild: {fileID: 8300000, guid: edff1229bd3a20d4181392a5b279a066, type: 3}
+  multiMonkeyBuild: {fileID: 8300000, guid: 4a43c2b822d2e3c4e9a0877930096b83, type: 3}
+  sfxGather: {fileID: 8300000, guid: 3910a2ea8957b22429687b2f70096843, type: 3}
+  sfxMining: {fileID: 8300000, guid: 394992f6a72bf704c9894b26c3daff7e, type: 3}
+  sfxSelectWorldObj: {fileID: 8300000, guid: 0d654e8ccf849f54683ac7b73f45bb00, type: 3}
+  sfxFinishBuild: {fileID: 8300000, guid: 5428f4062d795d545ab1bfaebd3eb857, type: 3}

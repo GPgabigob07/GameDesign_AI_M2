@@ -1,5 +1,3 @@
-using System;
-using Mono.Cecil;
 using UnityEngine;
 using UnityEngine.Assertions;
 using UnityEngine.Pool;
@@ -13,6 +11,7 @@ namespace Mechanics.Village.Pools
         
         private ObjectPool<ItemOutputProgress> _pool;
         private ItemOutputProgress _original;
+        private Transform _storage;
 
         private void Awake()
         {
@@ -23,14 +22,20 @@ namespace Mechanics.Village.Pools
                 CreateItemOutputProgress,
                 OnGetItemOutputProgress, 
                 OnReleaseItemOutputProgress,
-                OnDestroyItemOutputProgress
+                OnDestroyItemOutputProgress,
+                maxSize: 20
             );
+
+            var storage = new GameObject("OutputProgressBarStorage");
+            _storage = storage.transform;
+            storage.transform.SetParent(transform);
         }
 
         private void OnReleaseItemOutputProgress(ItemOutputProgress obj)
         {
             obj.gameObject.SetActive(false);
             obj.Resource = null;
+            obj.MarkDirty();
             obj.transform.SetPositionAndRotation(Vector3.zero, Quaternion.identity);
         }
 
@@ -41,7 +46,7 @@ namespace Mechanics.Village.Pools
 
         private ItemOutputProgress CreateItemOutputProgress()
         {
-            return Instantiate(_original);
+            return Instantiate(_original, _storage);
         }
 
         private void OnDestroyItemOutputProgress(ItemOutputProgress obj)

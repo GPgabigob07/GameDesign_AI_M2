@@ -34,7 +34,12 @@ namespace Mechanics.Village.Pools
             hasUpdated = false;
             if (!_image) return;
             _mask.padding = Vector4.one;
-            _image.sprite = _resource.output.uiSprite;
+            _image.sprite = _resource?.output?.uiSprite;
+        }
+
+        public void MarkDirty()
+        {
+            SetSprite();
         }
     }
 }

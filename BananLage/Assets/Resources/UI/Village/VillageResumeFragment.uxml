@@ -1,0 +1,49 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Resources/UI/Village/VilageResumeDetails.uss?fileID=7433441132597879392&amp;guid=79a614f08c945be4c9079a96950b6e2d&amp;type=3#VilageResumeDetails" />
+    <Style src="project://database/Assets/GlobalStyles.uss?fileID=7433441132597879392&amp;guid=0e0955816600cc04eb29f8fa57981950&amp;type=3#GlobalStyles" />
+    <ui:VisualElement name="villageInfoRoot" data-source-type="UI.Controllers.VillageViewObject, Assembly-CSharp" style="position: absolute; left: 0; right: 0; top: 0; flex-direction: row; align-self: center; align-content: center; justify-content: center; align-items: center;">
+        <ui:VisualElement name="VisualElement" style="flex-grow: 1; position: absolute; left: 0; right: 0; top: 0; flex-direction: row; align-self: center; justify-content: center;">
+            <ui:VisualElement name="leftContent" style="border-top-left-radius: 9px; border-top-right-radius: 9px; border-bottom-right-radius: 9px; border-bottom-left-radius: 9px; background-image: resource(&apos;UI/Sprites/HUD/ciclo/painel recursos L&apos;); align-self: flex-start; left: 16px; width: 370px; height: 51px; padding-top: 9px; padding-right: 19px; padding-bottom: 11px; padding-left: 29px; align-items: flex-start;">
+                <ui:VisualElement style="flex-grow: 1; flex-direction: row;">
+                    <ui:VisualElement style="background-image: resource(&apos;UI/Sprites/HUD/icones/monkeys&apos;); width: 32px; height: 32px;" />
+                    <ui:Label text="Label" class="label">
+                        <Bindings>
+                            <ui:DataBinding property="text" data-source-path="MonkeyCount" binding-mode="ToTarget" />
+                        </Bindings>
+                    </ui:Label>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement style="width: 596px; display: flex; visibility: hidden;" />
+            <ui:VisualElement name="rightContent" style="border-top-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; border-bottom-left-radius: 8px; padding-top: 9px; padding-right: 29px; padding-bottom: 11px; padding-left: 9px; align-self: flex-end; right: 16px; width: 370px; height: 51px; background-image: resource(&apos;UI/Sprites/HUD/ciclo/painel recursos R&apos;); align-content: flex-end; align-items: flex-end;" />
+        </ui:VisualElement>
+        <ui:VisualElement style="border-top-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 24px; border-bottom-left-radius: 24px; background-image: resource(&apos;UI/Sprites/HUD/ciclo/painel ciclo&apos;); width: 607px; height: 116px; position: relative; align-self: center; align-content: center; justify-content: center; align-items: center; top: 0;">
+            <ui:VisualElement name="cycleContainer" style="position: absolute; left: 16px; right: 16px; top: 40px; height: 24px;">
+                <ui:VisualElement name="cycleBar" style="width: 100%; align-items: center; position: absolute; top: 0; flex-direction: row; align-content: center; justify-content: center; background-image: resource(&apos;UI/Sprites/HUD/ciclo/barra ciclo laranja&apos;);">
+                    <ui:VisualElement name="cycleBarCycles" style="height: 24px; width: auto; flex-direction: row; flex-wrap: nowrap; overflow: hidden; border-top-left-radius: 12px; border-top-right-radius: 12px; border-bottom-right-radius: 12px; border-bottom-left-radius: 12px;">
+                        <ui:VisualElement />
+                        <ui:VisualElement />
+                        <ui:VisualElement />
+                        <ui:VisualElement />
+                        <ui:VisualElement style="background-image: resource(&apos;UI/Sprites/HUD/ciclo/barra ciclo neutro&apos;);">
+                            <ui:VisualElement style="flex-grow: 0; height: 24px; width: 24px; align-self: center; background-image: resource(&apos;UI/Sprites/HUD/icones/neutro-ativado&apos;);" />
+                        </ui:VisualElement>
+                        <ui:VisualElement />
+                        <ui:VisualElement />
+                        <ui:VisualElement />
+                        <ui:VisualElement />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="fades" style="flex-grow: 1; position: absolute; left: 0; bottom: auto; top: 0; width: 100%; height: 24px; background-image: resource(&apos;UI/Sprites/HUD/ciclo/sombra ciclos desativados&apos;); right: 0;" />
+                <ui:VisualElement name="exitFades" style="background-image: resource(&apos;UI/Sprites/HUD/ciclo/sombra cantos ciclo&apos;); height: 24px; left: 0; right: 0; position: absolute; top: 0;" />
+            </ui:VisualElement>
+            <ui:VisualElement style="background-image: resource(&apos;UI/Sprites/HUD/ciclo/indicador ciclo&apos;); width: 232px; height: 72px; align-self: center; top: 0; position: absolute;">
+                <ui:Label text="CICLO ATUAL" class="title" style="font-size: 21px;">
+                    <Bindings>
+                        <ui:DataBinding property="text" data-source-path="CurrentCycle" binding-mode="ToTarget" />
+                    </Bindings>
+                </ui:Label>
+            </ui:VisualElement>
+            <ui:VisualElement name="advanceCycle" style="background-image: resource(&apos;UI/Sprites/HUD/ciclo/botao ciclo&apos;); width: 73px; height: 30px; position: absolute; bottom: 8px;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

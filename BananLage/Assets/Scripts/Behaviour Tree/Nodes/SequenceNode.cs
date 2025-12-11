@@ -11,7 +11,7 @@ namespace Behaviour_Tree
             {
                 var result = item.Process();
 
-                if (Manager.debug)
+                if (Manager.nodeDebug)
                 {
                     Debug.Log($"[{GetType().Name}_Selector] Processing {item.Name}, result: {result}");
                 }
@@ -28,7 +28,7 @@ namespace Behaviour_Tree
                 }
             }
 
-            return NodeResult.Unknown;
+            return NodeResult.Success;
         }
     }
 }

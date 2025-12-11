@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d06544a8a54e19a074da7de16f3d8e, type: 3}
+  m_Name: GoldMining
+  m_EditorClassIdentifier: 
+  structureName: "Minera\xE7\xE3o de Ouro"
+  uiSprite: {fileID: 21300000, guid: 7e3845026940b114e949c5956c447956, type: 3}
+  structureType: 0
+  structureStage: {fileID: 0}
+  buildCosts:
+  - amount: 100
+    resource: {fileID: 11400000, guid: 7c6263defa5141e4ab3fd1b377eb3baf, type: 2}
+    chance: 0
+  - amount: 250
+    resource: {fileID: 11400000, guid: 4777d54857f86524e82602932b057a1d, type: 2}
+    chance: 0
+  - amount: 50
+    resource: {fileID: 11400000, guid: b632fbae8e8cfe84fa234bd5df1acaba, type: 2}
+    chance: 0
+  buildConfiguration:
+    maxAvPerWorker: 10
+    maxWorkers: 3
+    maxConcurrentWorkers: 3
+    minCycles: 0
+    aVCost: 30
+    canExecuteContinuously: 0
+    timePerAv: 10
+  isBuildable: 1
+  worldSize: {x: 3, y: 3}
+  workingArea: {x: 3, y: 3}
+  workingAreaOffset: {x: 0, y: -1}
+  taskType: 2
+  taskAnimation: 1
+  productionCycleConfiguration:
+    maxAvPerWorker: 3
+    maxWorkers: 3
+    maxConcurrentWorkers: 3
+    minCycles: 0
+    aVCost: 20
+    canExecuteContinuously: 0
+    timePerAv: 15
+  outputs:
+  - amount: 1
+    resource: {fileID: 11400000, guid: 4777d54857f86524e82602932b057a1d, type: 2}
+    chance: 0.5
+  - amount: 5
+    resource: {fileID: 11400000, guid: b632fbae8e8cfe84fa234bd5df1acaba, type: 2}
+    chance: 1
+  - amount: 2
+    resource: {fileID: 11400000, guid: b632fbae8e8cfe84fa234bd5df1acaba, type: 2}
+    chance: 0.5

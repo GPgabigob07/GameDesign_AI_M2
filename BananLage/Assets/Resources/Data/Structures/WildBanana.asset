@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d06544a8a54e19a074da7de16f3d8e, type: 3}
+  m_Name: WildBanana
+  m_EditorClassIdentifier: 
+  structureName: Wild Banana Tree
+  uiSprite: {fileID: 21300000, guid: 12273adb94e8b8c428c2e59f4c3ff649, type: 3}
+  structureType: 3
+  structureStage: {fileID: 11400000, guid: cf374b17ca1a0a943a724db7e44bbbbf, type: 2}
+  buildCosts: []
+  buildConfiguration:
+    maxAvPerWorker: 0
+    maxWorkers: 0
+    maxConcurrentWorkers: 0
+    minCycles: 0
+    aVCost: 0
+    canExecuteContinuously: 0
+    timePerAv: 0
+  isBuildable: 0
+  worldSize: {x: 2, y: 2}
+  workingArea: {x: 2, y: 2}
+  workingAreaOffset: {x: 0, y: 0}
+  taskType: 3
+  taskAnimation: 0
+  productionCycleConfiguration:
+    maxAvPerWorker: 3
+    maxWorkers: 3
+    maxConcurrentWorkers: 3
+    minCycles: 0
+    aVCost: 3
+    canExecuteContinuously: 0
+    timePerAv: 3.33
+  outputs:
+  - amount: 1
+    resource: {fileID: 11400000, guid: a0dbb019ba7655647975c614ac6e2352, type: 2}
+    chance: 1
+  - amount: 1
+    resource: {fileID: 11400000, guid: a0dbb019ba7655647975c614ac6e2352, type: 2}
+    chance: 0.529
+  - amount: 1
+    resource: {fileID: 11400000, guid: a0dbb019ba7655647975c614ac6e2352, type: 2}
+    chance: 0.183
+  - amount: 1
+    resource: {fileID: 11400000, guid: a0dbb019ba7655647975c614ac6e2352, type: 2}
+    chance: 0.183

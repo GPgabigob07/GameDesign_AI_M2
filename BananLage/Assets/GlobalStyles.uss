@@ -1,0 +1,27 @@
+.title {
+    -unity-font-definition: resource('UI/COOPBL');
+    color: rgb(229, 146, 87);
+    -unity-text-align: lower-center;
+    font-size: 26px;
+    white-space: normal;
+    text-overflow: clip;
+    -unity-font-style: normal;
+}
+
+.icon {
+    width: 32px;
+    height: 32px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+.label {
+    -unity-font-definition: resource('UI/COOPBL');
+    color: rgb(235, 199, 91);
+    -unity-text-align: middle-center;
+}
+
+.expanded {
+}

@@ -1,0 +1,9 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:VisualElement name="productionStructureRoot" data-source-type="UI.Controllers.Object_Details.Types.ProductionStructureViewObject, Assembly-CSharp" style="flex-grow: 1;">
+        <ui:ListView focusable="false" fixed-item-height="44" selection-type="None" name="outputsList" binding-source-selection-mode="AutoAssign" show-bound-collection-size="false" allow-remove="false" allow-add="false" item-template="project://database/Assets/Resources/UI/Inspection/Structure/Production/OutputItemTemplate.uxml?fileID=9197481963319205126&amp;guid=ffe8040d94b100c4c87a4f0eaecbcdb8&amp;type=3#OutputItemTemplate">
+            <Bindings>
+                <ui:DataBinding property="itemsSource" data-source-path="outputs" binding-mode="ToTarget" />
+            </Bindings>
+        </ui:ListView>
+    </ui:VisualElement>
+</ui:UXML>

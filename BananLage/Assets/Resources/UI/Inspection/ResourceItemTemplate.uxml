@@ -1,0 +1,15 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/GlobalStyles.uss?fileID=7433441132597879392&amp;guid=0e0955816600cc04eb29f8fa57981950&amp;type=3#GlobalStyles" />
+    <ui:VisualElement name="itemRoot" data-source-type="UI.Controllers.Object_Details.Types.Strutures.StructureResourceViewObject, Assembly-CSharp" style="padding-top: 4px; padding-right: 12px; padding-bottom: 4px; padding-left: 12px; border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; flex-direction: row; align-items: center; margin-top: 2px; margin-right: 2px; margin-bottom: 2px; margin-left: 2px; background-image: resource(&apos;UI/Sprites/HUD/status/perfil status/slot status&apos;); height: 40px; justify-content: space-between;">
+        <ui:VisualElement name="itemIcon" class="icon" style="width: 32px; height: 32px; border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-right-radius: 2px; border-bottom-left-radius: 2px; flex-shrink: 0;">
+            <Bindings>
+                <ui:DataBinding property="style.backgroundImage" data-source-path="Icon" binding-mode="ToTarget" />
+            </Bindings>
+        </ui:VisualElement>
+        <ui:Label text="x2 (55%)" class="label" style="-unity-font-style: bold; font-size: 12px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;">
+            <Bindings>
+                <ui:DataBinding property="text" data-source-path="Described" binding-mode="ToTarget" />
+            </Bindings>
+        </ui:Label>
+    </ui:VisualElement>
+</ui:UXML>

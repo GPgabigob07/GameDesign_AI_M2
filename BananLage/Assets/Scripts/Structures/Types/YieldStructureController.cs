@@ -5,10 +5,10 @@ using Mechanics.Village.Pools;
 
 namespace Structures.Types
 {
-    public class YieldStructureController: StructureController<ProductionJobContext>
+    public class YieldStructureController : StructureController<ProductionJobContext>
     {
         private ItemOutputProgress[] _progresses;
-        
+
         public void NotifyJobProgress()
         {
             var ctx = _currentJob;
@@ -17,8 +17,11 @@ namespace Structures.Types
             if (ctx.IsFinished)
             {
                 _currentJob = null;
-                cooldown = true;
                 VillageManager.DismissProgress(ref _progresses);
+
+                if (StructureData.structureStage && StageController)
+                    StageController.Begin();
+                
                 return;
             }
 
@@ -30,6 +33,13 @@ namespace Structures.Types
             var job = new ProductionJobContext(monkey, this, JobType);
             _currentJob = job;
             return job;
+        }
+
+        public override bool IsAvailable => _currentJob is null && (!StructureData.structureStage || StageController.Ended);
+
+        public override int CalculateCost()
+        {
+            return StructureData.productionCycleConfiguration.aVCost;
         }
     }
 }

@@ -1,4 +1,5 @@
 using System;
+using Structures;
 
 namespace Mechanics.Production
 {

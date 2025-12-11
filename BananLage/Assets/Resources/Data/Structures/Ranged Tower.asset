@@ -14,14 +14,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   structureName: Ranged Tower
   uiSprite: {fileID: -1755340603, guid: 645cdbfc7d5aa3749ad77c85c4491739, type: 3}
-  gamePrefab: {fileID: 0}
+  structureType: 2
+  structureStage: {fileID: 0}
   buildCosts: []
-  buildAV: 0
-  executionAV: 0
+  buildConfiguration:
+    maxAvPerWorker: 0
+    maxWorkers: 0
+    maxConcurrentWorkers: 0
+    minCycles: 0
+    aVCost: 0
+    canExecuteContinuously: 0
+    timePerAv: 0
+  isBuildable: 0
   worldSize: {x: 0, y: 0}
   workingArea: {x: 0, y: 0}
   workingAreaOffset: {x: 0, y: 0}
   taskType: 0
-  productionTimeAmp: 1
-  canProduceContinuously: 0
+  taskAnimation: 0
+  productionCycleConfiguration:
+    maxAvPerWorker: 0
+    maxWorkers: 0
+    maxConcurrentWorkers: 0
+    minCycles: 0
+    aVCost: 0
+    canExecuteContinuously: 0
+    timePerAv: 0
   outputs: []

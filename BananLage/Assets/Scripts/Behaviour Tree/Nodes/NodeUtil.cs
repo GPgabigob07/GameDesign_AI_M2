@@ -9,9 +9,9 @@ namespace Behaviour_Tree.Nodes
             return new InverterNode<T>(node);
         }
 
-        public static BooleanNode<T> SimpleBoolean<T>(Func<T, bool> condition) where T : BehaviourTreeManager<T>
+        public static BooleanNode<T> SimpleBoolean<T>(Func<T, bool> condition, string name) where T : BehaviourTreeManager<T>
         {
-            return new BooleanNode<T>(condition);
+            return new BooleanNode<T>(condition, name);
         }
         
     }

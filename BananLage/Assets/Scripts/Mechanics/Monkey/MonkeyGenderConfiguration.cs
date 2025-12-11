@@ -12,6 +12,7 @@ namespace Mechanics
         public int minStartHp, maxStartHp;
         public MonkeyProwess likelyProwess;
         public int baseActionValue;
+        public float bedEfficiency;
 
         public int NewCycle() => Random.Range(minMatingCycles, maxMatingCycles);
         public int NewHp() => Random.Range(minStartHp, maxStartHp);
@@ -29,6 +30,7 @@ namespace Mechanics
             foreach (var item in typeof(TaskType).GetEnumValues())
             {
                 prowess.Allow((TaskType)item, true);
+                prowess[(TaskType)item] = 1;
                 totalWeights += likelyProwess[(TaskType)item];
             }
             

@@ -41,94 +41,18 @@ Tilemap:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908929141799563916}
   m_Enabled: 1
-  m_Tiles:
-  - first: {x: -1, y: -1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 0
-      m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 0, y: -1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: -1, y: 0, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 1
-      m_TileSpriteIndex: 1
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
-  - first: {x: 0, y: 0, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      dummyAlignment: 0
-      m_AllTileFlags: 1073741825
+  m_Tiles: {}
   m_AnimatedTiles: {}
-  m_TileAssetArray:
-  - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: dd476b38ecad8b948be315587fcec8cb, type: 2}
-  - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: f73636fab6487d34e82cfc781a0f6f1d, type: 2}
-  - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: edbda5fde7ab231458e0a7c8b371058a, type: 2}
-  - m_RefCount: 1
-    m_Data: {fileID: 11400000, guid: cf8537fec897d814797ddefb27cc0329, type: 2}
-  m_TileSpriteArray:
-  - m_RefCount: 1
-    m_Data: {fileID: 962829484, guid: 205b30ad566545a4e9948b9cd40eca27, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 1334174105062910073, guid: 205b30ad566545a4e9948b9cd40eca27, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 340920893, guid: 205b30ad566545a4e9948b9cd40eca27, type: 3}
-  - m_RefCount: 1
-    m_Data: {fileID: 1253168776, guid: 205b30ad566545a4e9948b9cd40eca27, type: 3}
-  m_TileMatrixArray:
-  - m_RefCount: 4
-    m_Data:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-  m_TileColorArray:
-  - m_RefCount: 4
-    m_Data: {r: 1, g: 1, b: 1, a: 1}
+  m_TileAssetArray: []
+  m_TileSpriteArray: []
+  m_TileMatrixArray: []
+  m_TileColorArray: []
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Origin: {x: -1, y: -1, z: 0}
-  m_Size: {x: 2, y: 2, z: 1}
-  m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
+  m_Origin: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0, y: 0, z: 1}
+  m_TileAnchor: {x: 0, y: 0, z: 0}
   m_TileOrientation: 0
   m_TileOrientationMatrix:
     e00: 1
@@ -225,7 +149,7 @@ Transform:
   m_GameObject: {fileID: 1479117250589468781}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7, y: 8, z: -0.45}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -246,9 +170,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d3ab1b4c83a40eb84020ac67f3ca169, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  <StructureData>k__BackingField: {fileID: 11400000, guid: 17da7c35a07b5cb4fb70d4fdd033fb0c, type: 2}
+  <StructureData>k__BackingField: {fileID: 0}
   <SpriteRenderer>k__BackingField: {fileID: 2386120139664044409}
   cooldown: 0
+  debubPlacement: 0
   tilemap: {fileID: 3286594135617041945}
   tilemapRenderer: {fileID: 5599056383766231178}
   structurePreview: {fileID: 2386120139664044409}
@@ -262,6 +187,10 @@ MonoBehaviour:
   bottomLeft: {fileID: 11400000, guid: dd476b38ecad8b948be315587fcec8cb, type: 2}
   bottomEdge: {fileID: 11400000, guid: 14abbc255acef21478ae5436326c95d6, type: 2}
   bottomRight: {fileID: 11400000, guid: edbda5fde7ab231458e0a7c8b371058a, type: 2}
+  previewError: {r: 0.7169812, g: 0, b: 0, a: 0.5019608}
+  previewColor: {r: 0.55897164, g: 1, b: 0.3820755, a: 1}
+  previewPlacement: 0
+  currentPreviewColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &2856395899071638376
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,7 +263,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2, y: 2, z: 1}
+  m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 5912324599593457046}
@@ -359,7 +288,7 @@ SpriteMask:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 4
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: 15d0c3709176029428a0da2f8cecf0b5, type: 2}
@@ -422,7 +351,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 5912324599593457046}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -446,7 +375,7 @@ SpriteRenderer:
   m_RayTracingAccelStructBuildFlagsOverride: 0
   m_RayTracingAccelStructBuildFlags: 1
   m_SmallMeshCulling: 1
-  m_RenderingLayerMask: 1
+  m_RenderingLayerMask: 2
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
@@ -470,7 +399,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 7625fb4c5de51074c9ecd9b6265244a3, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.49411765}
   m_FlipX: 0
   m_FlipY: 0
@@ -478,6 +407,6 @@ SpriteRenderer:
   m_Size: {x: 0.96875, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0

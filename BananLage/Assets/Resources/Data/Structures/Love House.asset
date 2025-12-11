@@ -13,6 +13,68 @@ MonoBehaviour:
   m_Name: Love House
   m_EditorClassIdentifier: 
   structureName: Love House
-  uiSprite: {fileID: 128309143, guid: 645cdbfc7d5aa3749ad77c85c4491739, type: 3}
-  gamePrefab: {fileID: 0}
-  buildCosts: []
+  uiSprite: {fileID: 2171948003693202339, guid: 979a85b6aadd4a14d9a4536ce64b5910, type: 3}
+  structureType: 1
+  buildCosts:
+  - amount: 1
+    resource: {fileID: 11400000, guid: a0dbb019ba7655647975c614ac6e2352, type: 2}
+    config:
+      maxAvPerWorker: 0
+      maxWorkers: 0
+      maxConcurrentWorkers: 0
+      minCycles: 0
+      aVCost: 0
+      canExecuteContinuously: 0
+      timePerAv: 0
+  - amount: 1
+    resource: {fileID: 11400000, guid: 4777d54857f86524e82602932b057a1d, type: 2}
+    config:
+      maxAvPerWorker: 0
+      maxWorkers: 0
+      maxConcurrentWorkers: 0
+      minCycles: 0
+      aVCost: 0
+      canExecuteContinuously: 0
+      timePerAv: 0
+  - amount: 0
+    resource: {fileID: 11400000, guid: 7c6263defa5141e4ab3fd1b377eb3baf, type: 2}
+    config:
+      maxAvPerWorker: 0
+      maxWorkers: 0
+      maxConcurrentWorkers: 0
+      minCycles: 0
+      aVCost: 0
+      canExecuteContinuously: 0
+      timePerAv: 0
+  - amount: 1
+    resource: {fileID: 11400000, guid: 21da17af60eb9a34cbcc5ff6b38c860e, type: 2}
+    config:
+      maxAvPerWorker: 0
+      maxWorkers: 0
+      maxConcurrentWorkers: 0
+      minCycles: 0
+      aVCost: 0
+      canExecuteContinuously: 0
+      timePerAv: 0
+  buildConfiguration:
+    maxAvPerWorker: 10
+    maxWorkers: 5
+    maxConcurrentWorkers: 5
+    minCycles: 0
+    aVCost: 10
+    canExecuteContinuously: 0
+    timePerAv: 2
+  isBuildable: 1
+  worldSize: {x: 3, y: 2}
+  workingArea: {x: 2, y: 2}
+  workingAreaOffset: {x: 0, y: 0}
+  taskType: 4
+  productionCycleConfiguration:
+    maxAvPerWorker: 0
+    maxWorkers: 0
+    maxConcurrentWorkers: 0
+    minCycles: 0
+    aVCost: 5
+    canExecuteContinuously: 0
+    timePerAv: 5
+  outputs: []

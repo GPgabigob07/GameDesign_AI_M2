@@ -7,7 +7,7 @@ namespace AI.Monkey.Nodes
     {
         public override NodeResult Process()
         {
-            if (Manager.CurrentJob != null && !Manager.CurrentJob.IsFinished) return NodeResult.Failure;
+            if (Manager.CurrentJob is null or { HasEnded: false }) return NodeResult.Failure;
 
             //VillageManager.CollectOutputs(Manager.CurrentJob);
             //Manager.CycleData.ActionValue -= Manager.CurrentJob.Structure.StructureData.executionAV;

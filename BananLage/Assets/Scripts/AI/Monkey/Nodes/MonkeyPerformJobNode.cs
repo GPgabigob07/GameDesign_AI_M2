@@ -8,15 +8,6 @@ namespace Mechanics.Jobs
 {
     public class MonkeyPerformJobNode : LeafNode<MonkeyCharacterBT>
     {
-
-        private Action<MonkeyCharacterBT, JobContext> _dispatcher;
-        
-        public void SetDispatcher(Action<MonkeyCharacterBT, JobContext> dispatcher)
-        {
-            if (_dispatcher != null) throw new Exception("Can't set dispatcher twice");
-            _dispatcher = dispatcher;
-        }
-
         public override NodeResult Process()
         {
             var job = Manager.CurrentJob;
@@ -26,7 +17,7 @@ namespace Mechanics.Jobs
                 return NodeResult.Failure;
             }
             
-            job.Tick();
+            //
             if (Manager.debug)
             {
                 Debug.Log($"[{GetType().Name}] Job Processed: {job}");

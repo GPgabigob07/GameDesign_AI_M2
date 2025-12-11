@@ -1,0 +1,15 @@
+#unity-tab__header {
+    min-width: 128px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background-color: rgb(156, 105, 63);
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#unity-content-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgba(178, 178, 178, 0.69);
+}

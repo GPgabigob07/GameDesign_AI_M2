@@ -5,6 +5,7 @@ using Mechanics.Production;
 using Mechanics.Village;
 using UnityEditor;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace Mechanics.Jobs
 {
@@ -24,15 +25,6 @@ namespace Mechanics.Jobs
         public static MonkeyPerformJobNode GetJobNode(TaskType task)
         {
             var node = new MonkeyPerformJobNode();
-            node.SetDispatcher(task switch
-            {
-                TaskType.Combat => null,
-                TaskType.Build => null,
-                TaskType.Farm => null,
-                TaskType.Gather => _instance.Gather,
-                TaskType.Mate => null,
-                _ => throw new ArgumentOutOfRangeException(nameof(task), task, null)
-            });
             return node;
         }
 
@@ -51,6 +43,8 @@ namespace Mechanics.Jobs
             var structureStructureData = jobContext.Structure.StructureData;
             foreach (var data in structureStructureData.outputs)
             {
+                if (data.chance < Random.value) continue;
+                
                 jobContext.AddOutput(new ResourceOutput
                 {
                     expectedAmount = data.amount,
@@ -64,8 +58,8 @@ namespace Mechanics.Jobs
 
         public static bool CanPerformJob(JobContext ctx)
         {
-            return !ctx.IsFinished && ctx.HasBegun &&
-                   VillageManager.CanExecuteTask(ctx.Worker, ctx.TaskType, ctx.Structure.StructureData.executionAV);
+            return ctx is { IsFinished: false, HasBegun: true }/* &&
+                   VillageManager.CanExecuteTask(ctx.Worker, ctx.TaskType, ctx.Structure)*/;
         }
     }
 }

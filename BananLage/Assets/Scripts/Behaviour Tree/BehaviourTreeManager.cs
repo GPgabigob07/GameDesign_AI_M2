@@ -6,6 +6,7 @@ namespace Behaviour_Tree
         where Self : BehaviourTreeManager<Self>
     {
         public bool debug = false;
+        public bool nodeDebug = false;
         public abstract Node<Self> Root { get; protected set; }
         protected virtual void Start()
         {

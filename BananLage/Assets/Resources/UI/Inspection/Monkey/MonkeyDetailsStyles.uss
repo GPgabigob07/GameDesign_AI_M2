@@ -1,0 +1,17 @@
+.staminaItem {
+    flex-grow: 1;
+    background-image: resource('UI/Sprites/HUD/status/gerenciamento/ger macacos/barrinha barra energia');
+    min-height: 20px;
+    max-height: 22px;
+    align-self: stretch;
+    align-content: flex-start;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+
+#staminas > * {
+    min-height: 20px;
+    max-height: 22px;
+    height: 20px;
+    background-image: resource('UI/Sprites/HUD/status/gerenciamento/ger macacos/barrinha barra energia');
+}

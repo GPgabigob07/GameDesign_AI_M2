@@ -12,6 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc33204c08674b809f517bf81feb41b6, type: 3}
   m_Name: BananaItem
   m_EditorClassIdentifier: 
-  uiSprite: {fileID: 5357066674519017529, guid: 2299094062949ef48adbb1d891e6d59e, type: 3}
+  basicResource: 1
+  displayName: Banana
+  uiSprite: {fileID: 21300000, guid: 583ed1e56029cb64c89902b6d989cc30, type: 3}
   gamePrefab: {fileID: 0}
   productionTime: 5

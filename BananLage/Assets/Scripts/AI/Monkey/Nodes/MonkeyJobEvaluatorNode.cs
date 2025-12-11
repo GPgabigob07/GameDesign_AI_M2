@@ -1,5 +1,6 @@
 using AI.Monkey.Job;
 using Behaviour_Tree;
+using Behaviour_Tree.Nodes;
 using Mechanics;
 using Mechanics.Jobs;
 
@@ -16,8 +17,9 @@ namespace AI.Monkey.Nodes
 
         protected override void CreateChildren()
         {
-            AddChild(MonkeyBooleans.IsMonkeyWorking());
-            AddChild(new MonkeyBeginJobNode());
+            AddChild(MonkeyBooleans.WantsToRest().Invert());
+            AddChild(MonkeyBooleans.MonkeyHasJob());
+            // AddChild(new MonkeyBeginJobNode());
             AddChild(MonkeyBooleans.CanPerformJob());
             AddChild(JobLibrary.GetJobNode(_taskType));
         }

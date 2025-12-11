@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06d06544a8a54e19a074da7de16f3d8e, type: 3}
+  m_Name: RockSite
+  m_EditorClassIdentifier: 
+  structureName: Rock Site
+  uiSprite: {fileID: 21300000, guid: 24b3e02fb680d3c4fa3b51765a52f36c, type: 3}
+  structureType: 3
+  structureStage: {fileID: 0}
+  buildCosts: []
+  buildConfiguration:
+    maxAvPerWorker: 0
+    maxWorkers: 0
+    maxConcurrentWorkers: 0
+    minCycles: 0
+    aVCost: 0
+    canExecuteContinuously: 0
+    timePerAv: 0
+  isBuildable: 0
+  worldSize: {x: 2, y: 2}
+  workingArea: {x: 2, y: 2}
+  workingAreaOffset: {x: 0, y: 0}
+  taskType: 3
+  taskAnimation: 0
+  productionCycleConfiguration:
+    maxAvPerWorker: 2
+    maxWorkers: 2
+    maxConcurrentWorkers: 2
+    minCycles: 0
+    aVCost: 2
+    canExecuteContinuously: 1
+    timePerAv: 2
+  outputs:
+  - amount: 3
+    resource: {fileID: 11400000, guid: 4777d54857f86524e82602932b057a1d, type: 2}
+    chance: 1
+  - amount: 1
+    resource: {fileID: 11400000, guid: 4777d54857f86524e82602932b057a1d, type: 2}
+    chance: 0.505
+  - amount: 1
+    resource: {fileID: 11400000, guid: a5427cdfe814b394dbe06d9613e009a5, type: 2}
+    chance: 0.042

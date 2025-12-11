@@ -1,0 +1,11 @@
+#labelContainer > .spacer {
+    margin-top: 3px;
+    margin-bottom: 3px;
+    flex-grow: 0;
+}
+
+#labelContainer > .label {
+    background-image: resource('UI/Sprites/HUD/status/perfil status/slot status');
+    min-height: 22px;
+    flex-grow: 1;
+}

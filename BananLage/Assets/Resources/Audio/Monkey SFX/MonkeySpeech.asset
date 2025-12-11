@@ -1,0 +1,685 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1233149941 &-8622729304635609574
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (5)_{-8622729304635609574}
+  m_AudioClip: {fileID: 8300000, guid: 56d6c62ef2612ce4eb7ee40dcbaa7374, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-8424168976041319102
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (32)_{-8424168976041319102}
+  m_AudioClip: {fileID: 8300000, guid: 720a23f5b395baf40827a2686546d6f4, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-8332929694580817074
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (21)_{-8332929694580817074}
+  m_AudioClip: {fileID: 8300000, guid: 3485be9aca1ae74458a0de6c5b7f10e6, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-7136212430772415497
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (30)_{-7136212430772415497}
+  m_AudioClip: {fileID: 8300000, guid: 7dc28d737624f1440b85f9473c0d93d4, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-6699347892991488409
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (7)_{-6699347892991488409}
+  m_AudioClip: {fileID: 8300000, guid: ead2bb65c6946864181db136491a4050, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-6373232661606255709
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (29)_{-6373232661606255709}
+  m_AudioClip: {fileID: 8300000, guid: d2a45dc25110370478b2f8611c7dc885, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-6135376035667493893
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (18)_{-6135376035667493893}
+  m_AudioClip: {fileID: 8300000, guid: 691dd232d683bd34ba7e69595f9546f4, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-6059195608076385538
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (34)_{-6059195608076385538}
+  m_AudioClip: {fileID: 8300000, guid: d52e40280f0b85a4583c554a5e9229d1, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-6006913946869211720
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (19)_{-6006913946869211720}
+  m_AudioClip: {fileID: 8300000, guid: dc3d3312f300e9a45911b7a29ae2bfb3, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-5987848291661487408
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (31)_{-5987848291661487408}
+  m_AudioClip: {fileID: 8300000, guid: c788d672d410f5148bb9a930d8871e4b, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-5984588295870954502
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (22)_{-5984588295870954502}
+  m_AudioClip: {fileID: 8300000, guid: 002915eb611168147b367c7835060a1a, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-5512524114485341557
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (23)_{-5512524114485341557}
+  m_AudioClip: {fileID: 8300000, guid: 66ccab4b4995bcc46ac194752b627d9e, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-5505845933596487581
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (12)_{-5505845933596487581}
+  m_AudioClip: {fileID: 8300000, guid: 2ae167ef43f20364ba03bb5ef5978543, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-5423125642057052235
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (26)_{-5423125642057052235}
+  m_AudioClip: {fileID: 8300000, guid: 422aae11efd562b45a8e03857893e532, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-4955951468143829649
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (28)_{-4955951468143829649}
+  m_AudioClip: {fileID: 8300000, guid: 4c04954e290fa454c9ae6097c9ce870f, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-4432646996902883846
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (8)_{-4432646996902883846}
+  m_AudioClip: {fileID: 8300000, guid: 86f7220986682a743b8b11f25f245d15, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-4283509830339996235
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (34)_{-4283509830339996235}
+  m_AudioClip: {fileID: 8300000, guid: d52e40280f0b85a4583c554a5e9229d1, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-3982845994261396537
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (9)_{-3982845994261396537}
+  m_AudioClip: {fileID: 8300000, guid: a79242228987ef14ea7e0f76897baa68, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-3662511601121694995
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (37)_{-3662511601121694995}
+  m_AudioClip: {fileID: 8300000, guid: 2193f1431a39d6c46a2ae0b70871ebe9, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-3257734340941207157
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (15)_{-3257734340941207157}
+  m_AudioClip: {fileID: 8300000, guid: 7c6b76cc2eaee28479b538419f382569, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-3013735629365514656
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (27)_{-3013735629365514656}
+  m_AudioClip: {fileID: 8300000, guid: 93b0bc6d9261f9646abc8423b801d63e, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-2604057053678468556
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (13)_{-2604057053678468556}
+  m_AudioClip: {fileID: 8300000, guid: 1a4f11d700e35a740a016270323e2336, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-2397528034079863275
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (20)_{-2397528034079863275}
+  m_AudioClip: {fileID: 8300000, guid: c2f12516af1f8f04d9482c3a2a6b8c21, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1962095840860133302
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (27)_{-1962095840860133302}
+  m_AudioClip: {fileID: 8300000, guid: 93b0bc6d9261f9646abc8423b801d63e, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1818151245128816239
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (33)_{-1818151245128816239}
+  m_AudioClip: {fileID: 8300000, guid: a3fcff70afe1c884fb5601c183662a09, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1607167037216345679
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (21)_{-1607167037216345679}
+  m_AudioClip: {fileID: 8300000, guid: 3485be9aca1ae74458a0de6c5b7f10e6, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1598380671078178594
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (22)_{-1598380671078178594}
+  m_AudioClip: {fileID: 8300000, guid: 002915eb611168147b367c7835060a1a, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1571376193834512109
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (37)_{-1571376193834512109}
+  m_AudioClip: {fileID: 8300000, guid: 2193f1431a39d6c46a2ae0b70871ebe9, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1191177146704421678
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (1)_{-1191177146704421678}
+  m_AudioClip: {fileID: 8300000, guid: e238db805ffd28a4c8309c72ab01f625, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-1133079641452435619
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (36)_{-1133079641452435619}
+  m_AudioClip: {fileID: 8300000, guid: 1104fd2ba3f1fbb45a02d7991993d55d, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-827998167986606578
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (17)_{-827998167986606578}
+  m_AudioClip: {fileID: 8300000, guid: c5ec38fa968114f4b9ed7a7df13dfc66, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-824676267645590610
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (26)_{-824676267645590610}
+  m_AudioClip: {fileID: 8300000, guid: 422aae11efd562b45a8e03857893e532, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-775621333910643796
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (19)_{-775621333910643796}
+  m_AudioClip: {fileID: 8300000, guid: dc3d3312f300e9a45911b7a29ae2bfb3, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-570903864105079260
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (24)_{-570903864105079260}
+  m_AudioClip: {fileID: 8300000, guid: 4b76d06fa6ef115419e0ef0604494f5e, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-550925227117090984
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (6)_{-550925227117090984}
+  m_AudioClip: {fileID: 8300000, guid: b06be6f8b90499c4ea345c2cface2cad, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &-411028317763120609
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (11)_{-411028317763120609}
+  m_AudioClip: {fileID: 8300000, guid: 1df853c7ec1324a41bbccb66ec2e6302, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &65242732319187258
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (28)_{65242732319187258}
+  m_AudioClip: {fileID: 8300000, guid: 4c04954e290fa454c9ae6097c9ce870f, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &176093790952201602
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (29)_{176093790952201602}
+  m_AudioClip: {fileID: 8300000, guid: d2a45dc25110370478b2f8611c7dc885, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &459121301145634460
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (14)_{459121301145634460}
+  m_AudioClip: {fileID: 8300000, guid: e5d2b702dd440f34590acc12fb12945f, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &806292508921241704
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (3)_{806292508921241704}
+  m_AudioClip: {fileID: 8300000, guid: eb13d90084643cf4b9d0f80f00530dfe, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &1219399131283918235
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (17)_{1219399131283918235}
+  m_AudioClip: {fileID: 8300000, guid: c5ec38fa968114f4b9ed7a7df13dfc66, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &1594656376744939744
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (14)_{1594656376744939744}
+  m_AudioClip: {fileID: 8300000, guid: e5d2b702dd440f34590acc12fb12945f, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &2643602117524503013
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (32)_{2643602117524503013}
+  m_AudioClip: {fileID: 8300000, guid: 720a23f5b395baf40827a2686546d6f4, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &2794752878297430239
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (33)_{2794752878297430239}
+  m_AudioClip: {fileID: 8300000, guid: a3fcff70afe1c884fb5601c183662a09, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &2923066508053990258
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (16)_{2923066508053990258}
+  m_AudioClip: {fileID: 8300000, guid: c51978df65c1f6c4f9d794f490e314aa, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &3021074813766976852
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (20)_{3021074813766976852}
+  m_AudioClip: {fileID: 8300000, guid: c2f12516af1f8f04d9482c3a2a6b8c21, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &3029873523918633759
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (23)_{3029873523918633759}
+  m_AudioClip: {fileID: 8300000, guid: 66ccab4b4995bcc46ac194752b627d9e, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &3487537749935086614
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (2)_{3487537749935086614}
+  m_AudioClip: {fileID: 8300000, guid: afa3b959e9dcb674b93ec09429be379a, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &3898808120336516865
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (25)_{3898808120336516865}
+  m_AudioClip: {fileID: 8300000, guid: 2d2cc5a6a8e2f86469b5fdb7e41cb7b0, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &5051111716067185090
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (15)_{5051111716067185090}
+  m_AudioClip: {fileID: 8300000, guid: 7c6b76cc2eaee28479b538419f382569, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &5226153463029125310
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (30)_{5226153463029125310}
+  m_AudioClip: {fileID: 8300000, guid: 7dc28d737624f1440b85f9473c0d93d4, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &5449217027713529789
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (36)_{5449217027713529789}
+  m_AudioClip: {fileID: 8300000, guid: 1104fd2ba3f1fbb45a02d7991993d55d, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &5455525025783199766
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (4)_{5455525025783199766}
+  m_AudioClip: {fileID: 8300000, guid: 1c1120f5e89c1eb4fa2a16c5a98d4cf2, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1307931743 &6418180475301049370
+AudioRandomContainer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MonkeySpeech
+  m_Volume: -15
+  m_Pitch: 0
+  m_AutomaticTriggerTime: 3
+  m_LoopCount: 1
+  m_VolumeRandomizationRange: {x: 0, y: 0}
+  m_PitchRandomizationRange: {x: -5, y: 5}
+  m_AutomaticTriggerTimeRandomizationRange: {x: -2, y: 2}
+  m_LoopCountRandomizationRange: {x: 0, y: 0}
+  m_Elements:
+  - {fileID: -1191177146704421678}
+  - {fileID: 3487537749935086614}
+  - {fileID: 806292508921241704}
+  - {fileID: 5455525025783199766}
+  - {fileID: -8622729304635609574}
+  - {fileID: -550925227117090984}
+  - {fileID: -6699347892991488409}
+  - {fileID: -4432646996902883846}
+  - {fileID: -3982845994261396537}
+  - {fileID: 6998554807440908105}
+  - {fileID: -411028317763120609}
+  - {fileID: -5505845933596487581}
+  - {fileID: -2604057053678468556}
+  - {fileID: 459121301145634460}
+  - {fileID: -3257734340941207157}
+  - {fileID: 2923066508053990258}
+  - {fileID: -827998167986606578}
+  - {fileID: -6135376035667493893}
+  - {fileID: -6006913946869211720}
+  - {fileID: 3021074813766976852}
+  - {fileID: -1607167037216345679}
+  - {fileID: -5984588295870954502}
+  - {fileID: 3029873523918633759}
+  - {fileID: -570903864105079260}
+  - {fileID: 3898808120336516865}
+  - {fileID: -824676267645590610}
+  - {fileID: -3013735629365514656}
+  - {fileID: -4955951468143829649}
+  - {fileID: -6373232661606255709}
+  - {fileID: -7136212430772415497}
+  - {fileID: 7398835831889440347}
+  - {fileID: -8424168976041319102}
+  - {fileID: -1818151245128816239}
+  - {fileID: -4283509830339996235}
+  - {fileID: 7562677716397077377}
+  - {fileID: -1133079641452435619}
+  - {fileID: -3662511601121694995}
+  - {fileID: 7256833577408068023}
+  m_AvoidRepeatingLast: 3
+  m_PlaybackMode: 2
+  m_TriggerMode: 0
+  m_AutomaticTriggerMode: 0
+  m_LoopMode: 0
+  m_VolumeRandomizationEnabled: 0
+  m_PitchRandomizationEnabled: 1
+  m_AutomaticTriggerTimeRandomizationEnabled: 1
+  m_LoopCountRandomizationEnabled: 0
+--- !u!1233149941 &6425079028996360118
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (16)_{6425079028996360118}
+  m_AudioClip: {fileID: 8300000, guid: c51978df65c1f6c4f9d794f490e314aa, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &6561821803275488502
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (38)_{6561821803275488502}
+  m_AudioClip: {fileID: 8300000, guid: 273e6d1c06dd89640bf0a8de50b9dd48, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &6998554807440908105
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (10)_{6998554807440908105}
+  m_AudioClip: {fileID: 8300000, guid: 1e00ba83be7a3da469e2ccf6d7f7dba2, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &7256833577408068023
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (38)_{7256833577408068023}
+  m_AudioClip: {fileID: 8300000, guid: 273e6d1c06dd89640bf0a8de50b9dd48, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &7398835831889440347
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (31)_{7398835831889440347}
+  m_AudioClip: {fileID: 8300000, guid: c788d672d410f5148bb9a930d8871e4b, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &7562677716397077377
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (35)_{7562677716397077377}
+  m_AudioClip: {fileID: 8300000, guid: 998db0e7646af0f4b800e3c3f5d3319d, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &7720009392151494709
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (1)_{7720009392151494709}
+  m_AudioClip: {fileID: 8300000, guid: e238db805ffd28a4c8309c72ab01f625, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &8721060789794261614
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (18)_{8721060789794261614}
+  m_AudioClip: {fileID: 8300000, guid: 691dd232d683bd34ba7e69595f9546f4, type: 3}
+  m_Volume: 0
+  m_Enabled: 1
+--- !u!1233149941 &9078727039992383275
+AudioContainerElement:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: monkey-sfx (35)_{9078727039992383275}
+  m_AudioClip: {fileID: 8300000, guid: 998db0e7646af0f4b800e3c3f5d3319d, type: 3}
+  m_Volume: 0
+  m_Enabled: 1

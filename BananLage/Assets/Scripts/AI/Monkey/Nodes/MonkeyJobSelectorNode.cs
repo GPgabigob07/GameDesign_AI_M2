@@ -1,6 +1,8 @@
 using System.Collections.Generic;
 using Behaviour_Tree;
 using Mechanics;
+using Mechanics.Village;
+using Structures.Types;
 using UnityEngine;
 
 namespace AI.Monkey.Nodes
@@ -8,51 +10,65 @@ namespace AI.Monkey.Nodes
     public class MonkeyJobSelectorNode : Node<MonkeyCharacterBT>
     {
         protected MonkeyData Data => Manager.CycleData;
-        internal TaskType? NextTask { get; set; }
 
-        private readonly MonkeyJobEvaluator _evaluator = new();
+        private MonkeyJobEvaluator _evaluator;
         private readonly Dictionary<TaskType, MonkeyJobScheduleNode> _jobs = new();
 
         public override NodeResult Process()
         {
             //maybe create selector|sequence loop node?
             //node would be working + do work
+            var toRest = Manager.PutToRest;
             if (Manager.CurrentJob != null)
             {
-                var current = Manager.CurrentJob;
-                var task = current.TaskType;
+                var result = TryDispatchCurrentJob();
+                if (!toRest) return result;
                 
-                if (Manager.debug)
-                {
-                    Debug.Log($"[{GetType().Name}] Has Job[{task}], dispatching directly");
-                }
-
-                return _jobs.TryGetValue(task, out var currentJob) ? currentJob.Process() : NodeResult.Failure;
+                if (Manager.CurrentJob is IdlingJobContext idle) // allow idling monkeys to go to rest without "finish idling"
+                    idle.ForceQuit(Data);
+                
             }
+                                    //no job, village skipping fallback
+            var nextTask = (toRest || VillageManager.ImmediateResolve) ? TaskType.Rest : ResolveNextTask();          
 
-            //node not working + loop [choose, evaluate]?
-            var time = 0f;
-            while (NextTask == null || !_evaluator.Evaluate((TaskType)NextTask, Data, Manager))
-            {
-                var attempt = Data.Prowess.ResolveNew();
-                if (time > 10f || attempt is null)
-                {
-                    if (Manager.debug)
-                        Debug.Log($"[{GetType().Name}] Could not resolve task, bail out");
-                    
-                    return NodeResult.Failure;
-                }
-                time += Time.deltaTime;
-                NextTask = attempt;
-            }
-            
-            Data.CurrentTask = NextTask;
+            Data.CurrentTask = nextTask;
             if (Manager.debug)
-                Debug.Log($"[{GetType().Name}] New Task: {Data.CurrentTask}");
+                Debug.Log($"[{Data.Name}] New Task: {Data.CurrentTask}");
             
-
             //leaf do work?
-            return _jobs.TryGetValue((TaskType)NextTask, out var job) ? job.Process() : NodeResult.Failure;
+            return _jobs.TryGetValue(nextTask, out var job) ? job.Process() : NodeResult.Failure;
+        }
+
+        private NodeResult TryDispatchCurrentJob()
+        {
+            var current = Manager.CurrentJob;
+            var task = current.TaskType;
+
+            if (Manager.debug)
+            {
+                Debug.Log($"[{GetType().Name}] Has Job[{task}], dispatching directly");
+            }
+
+            return _jobs.TryGetValue(task, out var currentJob) ? currentJob.Process() : NodeResult.Failure;
+        }
+
+        private TaskType ResolveNextTask()
+        {
+            var nextTask = Data.Prowess.ResolveNew(Manager.debug);
+            if (Data.ActionValue < 1) nextTask = TaskType.Idle;
+            else
+            {
+                _evaluator = new MonkeyJobEvaluator(Data);
+                var time = 0f;
+                while (_evaluator.HasAttempts)
+                {
+                    var candidate = Data.Prowess.ResolveNew(Manager.debug);
+                    nextTask = _evaluator.Evaluate(candidate, Data);
+                    if (nextTask != TaskType.Idle) break;
+                }
+            }
+            
+            return nextTask;
         }
 
         protected override void CreateChildren()
